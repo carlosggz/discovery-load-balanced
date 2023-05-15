@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: wc-service
+  cloud:
+    discovery:
+      enabled: true
+
+server:
+  port: ${app.port}
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: ${app.eureka-url}

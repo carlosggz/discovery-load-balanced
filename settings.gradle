@@ -1,0 +1,6 @@
+rootProject.name = 'discovery-load-balanced'
+
+include 'eureka-server'
+include 'sample-service'
+include 'feign-service'
+include 'wc-service'

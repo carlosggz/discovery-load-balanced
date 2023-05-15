@@ -1,0 +1,16 @@
+
+server.port: ${app.eureka.port}
+
+eureka.client:
+  register-with-eureka: false
+  fetch-registry: false
+  service-url:
+    defaultZone: ${app.eureka.url}
+
+spring:
+  security:
+    user:
+      name: ${app.eureka.username}
+      password: ${app.eureka.password}
+  application:
+    name: eureka-server
